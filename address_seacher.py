@@ -5,7 +5,7 @@ class AddressSeacher:
     def __init__(self):
         self.base_url = "http://zipcloud.ibsnet.co.jp/api/search"
 
-    def search(self, postal_code):
+    def search(self, postal_code: object) -> object:
         url = f"{self.base_url}?zipcode={postal_code}"
 
         response = requests.get(url)
